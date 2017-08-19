@@ -1,4 +1,4 @@
-var userInput = 'Scissors';
+var userInput = 'Bomb';
 
 userInput = userInput.toLowerCase();
 
@@ -36,6 +36,8 @@ function determineWinner(userChoice, computerChoice) {
     } else {
       return 'You won!';
     }
+  } if (userChoice === 'bomb') {
+    return 'You! Secret code used! You automatically win!';
   }
 }
 
